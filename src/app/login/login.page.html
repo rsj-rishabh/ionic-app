@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>App - Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label postion='floating'>User ID</ion-label>
+    <ion-input type='id' [(ngModel)]='user.id' required></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label postion='floating'>Password</ion-label>
+    <ion-input type='password' [(ngModel)]='user.password' required></ion-input>
+  </ion-item>
+  <ion-button expand='full' (click)='login(user)'>Login</ion-button>
+  <ion-button expand='full' [routerLink]='/register'>Register</ion-button>
+</ion-content>
