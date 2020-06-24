@@ -32,7 +32,7 @@ export class LoginPage implements OnInit {
         await this.afAuth.signInWithEmailAndPassword(user.id, user.password).then(
           data => {
             console.log(data);
-            this.navCtrl.navigateRoot('home');
+            this.navCtrl.navigateRoot('welcome');
           }
         ).catch();
       } catch(e){

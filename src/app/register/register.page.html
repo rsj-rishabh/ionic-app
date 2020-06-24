@@ -1,10 +1,10 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>register</ion-title>
+  <ion-toolbar color='primary'>
+    <ion-title>Register</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true">
   <ion-item>
     <ion-label postion='floating'>User ID</ion-label>
     <ion-input type='id' [(ngModel)]='user.id' required></ion-input>

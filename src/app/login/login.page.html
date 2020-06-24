@@ -4,7 +4,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true">
   <ion-item>
     <ion-label postion='floating'>User ID</ion-label>
     <ion-input type='id' [(ngModel)]='user.id' required></ion-input>
@@ -14,5 +14,5 @@
     <ion-input type='password' [(ngModel)]='user.password' required></ion-input>
   </ion-item>
   <ion-button expand='full' (click)='login(user)'>Login</ion-button>
-  <ion-button expand='full' [routerLink]='/register'>Register</ion-button>
+  <ion-button expand='full' [routerLink]="['/register']">Register</ion-button>
 </ion-content>
